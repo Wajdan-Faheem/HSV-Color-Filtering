@@ -36,7 +36,7 @@ while cap.isOpened():
 
     mask = cv.inRange(hsv, Lower_Bound,Upper_Bound)
 
-    #Applying mask
+    #Apply mask
 
     Final_Frame = cv.bitwise_and(frame,frame,mask=mask)
 
